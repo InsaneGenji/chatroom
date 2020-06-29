@@ -1,0 +1,222 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(../img/genji.png);
+    background-size: 100px 100px;
+}
+
+li {
+    list-style: none;
+}
+
+img {
+    vertical-align: middle;
+}
+
+/* 登录 */
+
+.register {
+    width: 300px;
+    height: 139px;
+    background-color: rgba(23, 162, 184, 0.5);
+    border: 1px solid #999;
+    border-radius: 9px;
+    padding: 13px;
+    margin: 100px auto;
+}
+
+.register .title {
+    height: 20px;
+    font-weight: 900;
+    text-align: center;
+    line-height: 20px;
+    color: #fff;
+}
+
+.register input, .register button {
+    display: block;
+    margin: 18px auto;
+}
+
+.register input {
+    width: 200px;
+    height: 23px;
+    border: 0;
+    border-radius: 3px;
+    padding: 0 5px;
+}
+
+.register button {
+    width: 100px;
+    height: 33px;
+    border: 0;
+    border-radius: 5px;
+}
+
+.register input:focus {
+    box-shadow: 0 0 39px rgba(155, 155, 155, 0.69);
+}
+
+/* 聊天室 */
+
+figure {
+    display: none;
+    width: 800px;
+    height: 600px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.88);
+    overflow: hidden;
+    margin: 39px auto;
+}
+
+figure figcaption section, figure aside {
+    overflow-y: auto;
+}
+
+/* 标题 */
+
+figure header {
+    height: 39px;
+    font-size: 24px;
+    text-align: center;
+    line-height: 39px;
+    background-color: rgba(23, 162, 184, 0.5);
+}
+
+figure figcaption section{
+    padding: 0 18px;
+}
+
+figure figcaption section li .username, figure aside li {
+    font-size: 14px;
+    color: #999;
+}
+
+figure figcaption {
+    height: 559px;
+    position: relative;
+    float: left;
+}
+
+/* 聊天信息 */
+
+figure figcaption section {
+    width: 600px;
+    height: 435px;
+}
+
+figure figcaption section .online {
+    width: fit-content;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    font-size: 12px;
+    background-color: #ccc;
+    border-radius: 6px;
+    padding: 2px 6px;
+    margin: 10px auto;
+}
+
+.myself, .others {
+    overflow: hidden;
+}
+
+.myself {
+    position: relative;
+    margin-bottom: 28px;
+}
+
+.others .username, .others .content {
+    position: relative;
+}
+
+.myself img, .myself .content {
+    float: right;
+}
+
+.myself .content, .others .content {
+    display: inline-block;
+    padding: 8px;
+    background-color: #ddd;
+    border-radius: 8px;
+}
+
+.myself .username {
+    position: absolute;
+    right: 40px;
+}
+
+.myself .content {
+    margin: 20px 11px 0 0;
+}
+
+.others .username, .others .content {
+    left: 45px;
+}
+
+.others .username {
+    top: -32px;
+}
+
+.others .content {
+    top: -28px;
+}
+
+/* 输入框 */
+
+figure figcaption textarea {
+    width: 600px;
+    height: 95px;
+    background-color: rgba(255, 255, 255, 0.88);
+    padding: 6px;
+    border: 0;
+    border-top: 1px solid #ddd;
+    resize: none;
+    position: absolute;
+    bottom: 23px;
+    left: 0;
+}
+
+figure figcaption button {
+    width: 62px;
+    height: 25px;
+    text-align: center;
+    line-height: 23px;
+    color: #fff;
+    background-color: #11a2a1;
+    border: 1px solid #fff;
+    position: absolute;
+    right: 18px;
+    bottom: 6px;
+}
+
+figure figcaption button:hover {
+    opacity: .8;
+}
+
+/* 用户列表 */
+
+figure aside {
+    width: 198px;
+    height: 559px;
+    border-left: 1px solid #ddd;
+    padding: 18px;
+    float: left;
+}
+
+figure aside li {
+    height: 28px;
+}
+
+figure aside li img {
+    height: 24px;
+}
+
+figure aside li p {
+    display: inline-block;
+    line-height: 28px;
+}
